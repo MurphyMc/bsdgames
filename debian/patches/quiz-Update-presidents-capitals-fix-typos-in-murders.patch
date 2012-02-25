@@ -1,3 +1,19 @@
+From: Tobias Quathamer <toddy@debian.org>
+Date: Thu, 16 Feb 2012 11:26:50 +0100
+Subject: quiz: Update presidents, capitals, fix typos in murders, poetry
+
+---
+ quiz/datfiles/africa  |   51 ++++++++++++++++++++++++++++++------------------
+ quiz/datfiles/america |   45 ++++++++++++++++++++++++++++++++++--------
+ quiz/datfiles/asia    |   40 ++++++++++++++++++++++++--------------
+ quiz/datfiles/europe  |   44 ++++++++++++++++++++++++++++-------------
+ quiz/datfiles/murders |    2 +-
+ quiz/datfiles/poetry  |    2 +-
+ quiz/datfiles/pres    |    6 +++-
+ 7 files changed, 129 insertions(+), 61 deletions(-)
+
+diff --git a/quiz/datfiles/africa b/quiz/datfiles/africa
+index 6e74550..a2eeeaf 100644
 --- a/quiz/datfiles/africa
 +++ b/quiz/datfiles/africa
 @@ -1,43 +1,56 @@
@@ -76,6 +92,8 @@
  {Rep{ublic} of }South Africa:Pretoria
 -{The }Gambia:Bathurst
 +{The }Gambia:Banjul|Bathurst
+diff --git a/quiz/datfiles/america b/quiz/datfiles/america
+index 7f8fee1..5c9e321 100644
 --- a/quiz/datfiles/america
 +++ b/quiz/datfiles/america
 @@ -1,27 +1,54 @@
@@ -142,6 +160,8 @@
  Uruguay:Montevideo
  Venezuela:Caracas
 +{The }Bahamas:Nassau
+diff --git a/quiz/datfiles/asia b/quiz/datfiles/asia
+index b9449f4..8c8ee55 100644
 --- a/quiz/datfiles/asia
 +++ b/quiz/datfiles/asia
 @@ -1,12 +1,16 @@
@@ -167,7 +187,7 @@
  India:New Delhi
  Indonesia:Jakarta|Djakarta
  Iran:Tehran
-@@ -14,28 +18,34 @@
+@@ -14,28 +18,34 @@ Iraq:Baghdad
  Israel:Jerusalem
  Japan:Tokyo
  Jordan:Amman
@@ -211,6 +231,8 @@
  Vietnam:Hanoi
 +{Republic of }Yemen:Sana'a
 +{{People's }Republic of }China:Beijing|Peking
+diff --git a/quiz/datfiles/europe b/quiz/datfiles/europe
+index 91176e5..d089f41 100644
 --- a/quiz/datfiles/europe
 +++ b/quiz/datfiles/europe
 @@ -1,44 +1,60 @@
@@ -288,3 +310,44 @@
 +United Kingdom|England|Great Britain|UK:London
 +Vatican City:Vatican City
 +[°A|A°|A]land Islands:Mariehamn
+diff --git a/quiz/datfiles/murders b/quiz/datfiles/murders
+index 30cf324..b1070ce 100644
+--- a/quiz/datfiles/murders
++++ b/quiz/datfiles/murders
+@@ -19,7 +19,7 @@ Pompeii:Vesuvius
+ {Yukio }Mishima:{Yukio }Mishima
+ {Alexander }Hamilton:{Aaron }Burr
+ Cleopatra:{the |an }asp
+-[Ann Boleyn|Catharine Howard]:Henry{ VIII}
++[Anne Boleyn|Catharine Howard]:Henry{ VIII}
+ vaudeville:{the }movies|film
+ {the }movies|film:TV|television
+ {the }VA patients:{the }nurses
+diff --git a/quiz/datfiles/poetry b/quiz/datfiles/poetry
+index f4c07d6..78d117a 100644
+--- a/quiz/datfiles/poetry
++++ b/quiz/datfiles/poetry
+@@ -64,7 +64,7 @@ Drink deep{,} or taste not the Pierian spring{.}:\
+ {Alexander }Pope
+ The curfew tolls the knell of parting day{,}:\
+ The lowing herd wind slowly o'er the lea:\
+-Elegy{ Written in a Country Church{-| }Yard:\
++Elegy{ Written in a Country Church{-| }Yard}:\
+ {Thomas }Gray
+ The best laid schemes o' mice an' men gang aft a-gley{,}:\
+ An{'|d} lea{'|v}e us nought but grief an{'|d} pain for promised joy{.}:\
+diff --git a/quiz/datfiles/pres b/quiz/datfiles/pres
+index 6f81228..4ce5862 100644
+--- a/quiz/datfiles/pres
++++ b/quiz/datfiles/pres
+@@ -79,5 +79,7 @@
+ {J{ames} }{D{anforth|an} }Quayle:{W{illiam|m} }{J{efferson} }Clinton
+ {W{illiam|m} }{J{efferson} }Clinton:1993-2001:\
+ {A{lbert} }{A{rnold} }Gore{{,} J{unio}r}:{G{eorge} }{W{alker} }Bush{{,} J{unio}r}
+-{G{eorge} }{W{alker} }Bush{{,} J{unio}r}:2001-:\
+-{R{ichard} }{B{ruce} }Cheney:
++{G{eorge} }{W{alker} }Bush{{,} J{unio}r}:2001-{{20}0}9:\
++{R{ichard} }{B{ruce} }Cheney:{B{arack} }{H{ussein} }Obama{ II}
++{B{arack} }{H{ussein} }Obama{ II}:2009-:\
++{J{oe{seph}} }{R{obinette} }{Biden}{{,} J{unio}r}:
+-- 

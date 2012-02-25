@@ -2,16 +2,14 @@
 %:
 	dh $@
 
-build: build-stamp
-build-stamp:
+override_dh_auto_build:
 	# Set up wordlist
 	cat /usr/share/dict/american-english /usr/share/dict/british-english | \
 		sort | uniq > temp-dictionary
-	dh build
-	touch build-stamp
+	dh_auto_build
 
-binary-arch: build
-	dh binary-arch --until dh_installdocs
+override_dh_installdocs:
+	dh_installdocs
 	cp atc/BUGS debian/bsdgames/usr/share/doc/bsdgames/BUGS.atc
 	cp hunt/README debian/bsdgames/usr/share/doc/bsdgames/README.hunt
 	cp phantasia/README debian/bsdgames/usr/share/doc/bsdgames/README.phantasia
@@ -24,8 +22,9 @@ binary-arch: build
 	   debian/bsdgames/var/games/bsdgames/phantasia/void \
 	   debian/bsdgames/usr/share/games/bsdgames/phantasia/
 	cat COPYING >> debian/bsdgames/usr/share/doc/bsdgames/copyright
-	
-	dh binary-arch --until dh_fixperms
+
+override_dh_fixperms:
+	dh_fixperms
 	chmod -R u+rw debian/bsdgames/usr/
 	# Games with score files need to be set up sgid games.
 	chown root:games debian/bsdgames/usr/games/atc \
@@ -61,6 +60,3 @@ binary-arch: build
 		debian/bsdgames/var/games/bsdgames/hack \
 		debian/bsdgames/var/games/bsdgames/hack/save
 	find debian/bsdgames/var/games/bsdgames -size 0 -exec rm {} \;
-	dh binary-arch --remaining
-
-binary: binary-indep binary-arch

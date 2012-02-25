@@ -1,3 +1,23 @@
+bsdgames (2.17-20) unstable; urgency=low
+
+  * Set maintainer to Debian Games Team, add myself as uploader
+  * Add git repository to debian/control
+  * rain: Update default delay. Closes: #579062
+  * quiz: Add answers to adults/babies. Closes: #659528
+  * primes: Document maximum number in manpage. Closes: #636569
+  * primes: Updated to NetBSD CVS as of 2012-02-16
+  * wtf: Add NMU. Closes: #574036
+  * hangman: Error out on 1000 unsuitable words. Closes: #610270
+  * Rename files in debian/patches, managed now with gbp-pq
+  * Remove Conflicts/Replaces on bsdgames-nonfree (<< 2.14) from
+    debian/control, that version is long gone now
+  * Remove Build-Depends on dpkg-dev (>= 1.9.0)
+  * Use set -e in postinst, postrm, and preinst
+  * Fix some typos spotted by Lintian
+  * Update to Standards-Version 3.9.3
+
+ -- Tobias Quathamer <toddy@debian.org>  Sat, 25 Feb 2012 17:11:48 +0100
+
 bsdgames (2.17-19) unstable; urgency=low
 
   * debian/patches/define-dead.diff:
