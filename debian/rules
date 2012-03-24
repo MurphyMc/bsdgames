@@ -1,4 +1,8 @@
 #!/usr/bin/make -f
+
+# Use all hardening features
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
 %:
 	dh $@
 
