@@ -12,3 +12,4 @@ primes-Document-maximum-number-in-manpage.-Closes-63.patch
 wtf-Add-NMU.-Closes-574036.patch
 hangman-Error-out-on-1000-unsuitable-words.-Closes-6.patch
 Fix-typos-spotted-by-Lintian.patch
+Fix-format-security-compiling-errors.patch
