@@ -1,5 +1,5 @@
 From: Tobias Quathamer <toddy@debian.org>
-Date: Thu, 16 Feb 2012 11:26:54 +0100
+Date: Mon, 26 Mar 2012 10:07:17 +0200
 Subject: Unsorted Debian patches
 
 ---
@@ -9,7 +9,6 @@ Subject: Unsorted Debian patches
  backgammon/common_source/allow.c |    4 ++-
  backgammon/teachgammon/ttext1.c  |    2 +-
  backgammon/teachgammon/ttext2.c  |    2 +-
- config.params                    |   42 +++++++++++++++++++++++++++++++++
  dab/gamescreen.h                 |    6 ++--
  dm/dm.c                          |    6 ++--
  fish/Makefrag                    |    8 ++++--
@@ -25,8 +24,7 @@ Subject: Unsorted Debian patches
  tests/number.-0.1                |    2 +-
  tetris/scores.c                  |   17 ++++++++-----
  trek/setup.c                     |    5 +++-
- 22 files changed, 134 insertions(+), 54 deletions(-)
- create mode 100644 config.params
+ 21 files changed, 92 insertions(+), 54 deletions(-)
 
 diff --git a/adventure/crc.c b/adventure/crc.c
 index 66504f1..c6ee5f1 100644
@@ -119,54 +117,6 @@ index 5e827d7..eb9a083 100644
  	"passed each other on the board, there is no chance of either team",
  	"being hit, so the game reduces to a race off the board.  Addi-",
  	"tional hints on strategy are presented in the practice game.",
-diff --git a/config.params b/config.params
-new file mode 100644
-index 0000000..aaea598
---- /dev/null
-+++ b/config.params
-@@ -0,0 +1,42 @@
-+# This file is read by configure and is used during the build of the
-+# Debian package.
-+
-+# Don't run configure interactively.
-+bsd_games_cfg_non_interactive=y
-+
-+# Install into here for building the package.
-+bsd_games_cfg_install_prefix=`pwd`/debian/bsdgames
-+
-+# Do not build or install these games:
-+bsd_games_cfg_no_build_dirs="dm banner fortune factor"
-+
-+# Keep huntd in /usr/sbin as it was in the past. I may
-+# change this later.
-+bsd_games_cfg_sbindir=/usr/sbin
-+
-+# Debian doesn't like cluttering up the /usr/*/games/ dirs too much,
-+# use a subdir. /var too.
-+bsd_games_cfg_usrlibdir=/usr/lib/games/bsdgames
-+bsd_games_cfg_sharedir=/usr/share/games/bsdgames
-+bsd_games_cfg_varlibdir=/var/games/bsdgames
-+
-+# Do not do chown now, we arn't running as root.
-+bsd_games_cfg_do_chown=n
-+
-+# Debian perfers symlinks for manpages.
-+bsd_games_cfg_use_dot_so=symlinks
-+
-+# I'll handle manpage compressing.
-+bsd_games_cfg_gzip_manpages=n
-+
-+# Policy says to use /usr/bin/pager by default.
-+bsd_games_cfg_pager=/usr/bin/pager
-+
-+# Always use the same wordlist for boggle, and don't use web2, it's too
-+# big. Instead, use the union of the wenglish and wbritish wordlists.
-+bsd_games_cfg_dictionary_src=`pwd`/temp-dictionary
-+
-+# Put it in /usr/share/games with the rest of the games data.
-+bsd_games_cfg_wtf_acronymfile=/usr/share/games/bsdgames/acronyms
-+
-+bsd_games_cfg_docdir=/usr/share/doc/bsdgames
 diff --git a/dab/gamescreen.h b/dab/gamescreen.h
 index ca90cb3..b3db2ea 100644
 --- a/dab/gamescreen.h
