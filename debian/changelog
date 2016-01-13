@@ -1,3 +1,9 @@
+bsdgames (2.17-23) unstable; urgency=medium
+
+  * Update to Standards-Version 3.9.6, no changes needed
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Wed, 13 Jan 2016 17:38:52 +0100
+
 bsdgames (2.17-22) unstable; urgency=medium
 
   * Update Vcs-URLs
