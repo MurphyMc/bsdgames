@@ -91,3 +91,5 @@ chown root:games /var/games/bsdgames/sail
 chmod g+rws /var/games/bsdgames/sail
 
 #DEBHELPER#
+
+exit 0

@@ -81,3 +81,5 @@ if [ "$1" = "upgrade" ] && dpkg --compare-versions "$2" lt 2.8; then
 fi
 
 #DEBHELPER#
+
+exit 0

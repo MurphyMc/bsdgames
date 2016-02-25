@@ -62,3 +62,5 @@ case "$action" in
 esac
 
 #DEBHELPER#
+
+exit 0
