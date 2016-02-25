@@ -5,6 +5,8 @@ bsdgames (2.17-24) UNRELEASED; urgency=medium
   * adventure:
     - Declare “Provides: adventure” as this is one possible implementation
       of the Colossal Cave Adventure.
+    - Use Debian alternatives system to present ‘bsdgames-adventure’ as an
+      implementation of ‘adventure’.
 
  --
 

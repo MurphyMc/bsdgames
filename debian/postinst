@@ -71,9 +71,20 @@ chmod 664 $SCOREFILES
 # in them.
 chmod 660 /var/games/bsdgames/phantasia/characs
 
+ADVENTURE_PRIORITY=50
+
 case "$action" in
 
-    configure|abort-upgrade|abort-remove|abort-deconfigure)
+    configure)
+        update-alternatives --install \
+                /usr/games/adventure adventure \
+                /usr/games/bsdgames-adventure $ADVENTURE_PRIORITY \
+                --slave \
+                    /usr/share/man/man6/adventure.6.gz adventure.6.gz \
+                    /usr/share/man/man6/bsdgames-adventure.6.gz
+        ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
         ;;
 
     *)

@@ -21,7 +21,12 @@ action="$1"
 
 case "$action" in
 
-    remove|deconfigure|upgrade|failed-upgrade)
+    remove|deconfigure)
+        update-alternatives --remove \
+                adventure /usr/games/bsdgames-adventure
+        ;;
+
+    upgrade|failed-upgrade)
         ;;
 
     *)
