@@ -1,6 +1,17 @@
 #!/bin/sh
+# Pre-install script for ‘python-coverage’.
+#
+# Man page: ‘dh_installdeb(1)’
 
 set -e
+
+# Summary of ways this script can be called:
+#   * <new-preinst> ‘install’
+#   * <new-preinst> ‘install’ <old-version>
+#   * <new-preinst> ‘upgrade’ <old-version>
+#   * <old-preinst> ‘abort-upgrade’ <new-version>
+# For details, see the Debian Policy §6.5 in the ‘debian-policy’ package
+# or on the web at <URL:http://www.debian.org/doc/debian-policy/>.
 
 SCOREFILES="
 	/var/games/bsdgames/atc_score

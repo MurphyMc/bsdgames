@@ -1,6 +1,20 @@
 #!/bin/sh
+# Post-install script for ‘bsdgames’ package.
+#
+# Man page: ‘dh_installdeb(1)’
 
 set -e
+
+# Summary of ways this script can be called:
+#   * <postinst> ‘configure’ <most-recently-configured-version>
+#   * <old-postinst> ‘abort-upgrade’ <new version>
+#   * <conflictor-postinst> ‘abort-remove’
+#     ‘in-favour’ <package> <new-version>
+#   * <deconfigured-postinst> ‘abort-deconfigure’
+#     ‘in-favour’ <failed-install-package> <version>
+#     ‘removing’ <conflicting-package> <version>
+# For details, see <URL:http://www.debian.org/doc/debian-policy/> or
+# the ‘debian-policy’ package.
 
 SCOREFILES="
 	/var/games/bsdgames/atc_score
