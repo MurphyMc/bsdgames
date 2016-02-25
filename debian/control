@@ -12,6 +12,7 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-games/bsdgames.git
 Package: bsdgames
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, wamerican | wordlist
+Provides: adventure
 Description: collection of classic textual unix games
  This is a collection of some of the text-based games and amusements that
  have been enjoyed for decades on unix systems.

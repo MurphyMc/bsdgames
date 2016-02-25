@@ -1,3 +1,13 @@
+bsdgames (2.17-24) UNRELEASED; urgency=medium
+
+  [ Ben Finney ]
+
+  * adventure:
+    - Declare “Provides: adventure” as this is one possible implementation
+      of the Colossal Cave Adventure.
+
+ --
+
 bsdgames (2.17-23) unstable; urgency=medium
 
   * Update to Standards-Version 3.9.6, no changes needed
