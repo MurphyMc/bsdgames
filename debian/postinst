@@ -16,6 +16,8 @@ set -e
 # For details, see <URL:http://www.debian.org/doc/debian-policy/> or
 # the ‘debian-policy’ package.
 
+action="$1"
+
 SCOREFILES="
 	/var/games/bsdgames/atc_score
 	/var/games/bsdgames/battlestar.log
@@ -68,6 +70,19 @@ chmod 664 $SCOREFILES
 # These files may not be world-readable as they have passwords
 # in them.
 chmod 660 /var/games/bsdgames/phantasia/characs
+
+case "$action" in
+
+    configure|abort-upgrade|abort-remove|abort-deconfigure)
+        ;;
+
+    *)
+        printf "postinst called with unknown action ‘%s’\n" "$action" >&2
+        exit 1
+        ;;
+
+esac
+
 
 # I have to make this directory here, because older version of this package
 # always deleted it in their postrm. Oops.

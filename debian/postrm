@@ -17,6 +17,8 @@ set -e
 # For details, see <URL:http://www.debian.org/doc/debian-policy/> or
 # the ‘debian-policy’ package.
 
+action="$1"
+
 SCOREFILES="
 	/var/games/bsdgames/atc_score
 	/var/games/bsdgames/battlestar.log
@@ -46,5 +48,17 @@ if [ "$1" = "purge" ]; then
 	rm -f /var/games/bsdgames/hack/save/* 2>/dev/null || true
 	rmdir -p /var/games/bsdgames/hack/save 2>/dev/null || true
 fi
+
+case "$action" in
+
+    remove|purge|upgrade|disappear|failed-upgrade|abort-install|abort-upgrade)
+        ;;
+
+    *)
+        printf "postrm called with unknown action ‘%s’\n" "$action" >&2
+        exit 1
+        ;;
+
+esac
 
 #DEBHELPER#
