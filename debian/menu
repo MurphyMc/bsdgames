@@ -44,7 +44,7 @@
 ?package(bsdgames):needs="text" section="Games/Adventure" \
 	title="Phantasia" command="phantasia"
 ?package(bsdgames):needs="text" section="Games/Adventure" \
-	title="Adventure" command="adventure"
+	title="BSD-Games Adventure" command="bsdgames-adventure"
 ?package(bsdgames):needs="text" section="Games/Puzzles" \
 	title="Hangman" command="hangman"
 ?package(bsdgames):needs="text" section="Games/Puzzles" \
