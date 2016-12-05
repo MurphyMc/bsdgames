@@ -1,7 +1,7 @@
 Source: bsdgames
 Section: games
 Priority: optional
-Build-Depends: debhelper (>= 9), libncurses5-dev, flex, bison,
+Build-Depends: debhelper (>= 10), libncurses5-dev, flex, bison,
  wamerican, wbritish, libfl-dev
 Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
 Uploaders: Dr. Tobias Quathamer <toddy@debian.org>
