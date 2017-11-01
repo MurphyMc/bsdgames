@@ -5,7 +5,7 @@ Build-Depends: debhelper (>= 10), libncurses5-dev, flex, bison,
  wamerican, wbritish, libfl-dev
 Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
 Uploaders: Dr. Tobias Quathamer <toddy@debian.org>
-Standards-Version: 3.9.8
+Standards-Version: 4.1.1
 Vcs-Git: https://anonscm.debian.org/git/pkg-games/bsdgames.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-games/bsdgames.git
 
