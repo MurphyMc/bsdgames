@@ -1,0 +1,32 @@
+From: "Dr. Tobias Quathamer" <toddy@debian.org>
+Date: Thu, 26 Apr 2018 14:58:17 +0200
+Subject: Add Debian acronyms
+
+---
+ wtf/acronyms.comp | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+
+diff --git a/wtf/acronyms.comp b/wtf/acronyms.comp
+index e27697c..026547e 100644
+--- a/wtf/acronyms.comp
++++ b/wtf/acronyms.comp
+@@ -1472,3 +1472,19 @@ ZFOD	zero-filled on demand
+ ZIF	zero insertion force
+ ZIFS	zero insertion force socket
+ ZMA	zone multicast address
++DD	Debian developer
++DDPO	Debian developer's package overview (https://qa.debian.org/developer.php)
++IANADD	I am not a Debian developer
++JFGI	just fucking google it
++LGPL	GNU lesser general public license
++MOTU	masters of the universe (Ubuntu developer)
++MPL	Mozilla public license
++NMU	Non-maintainer upload
++RFS	request for sponsorship
++RTSL	read the source, Luke (open source programming)
++RTSL	real-time shading language (Stanford University)
++RTSL	real-time systems laboratory
++SIYH	sooner if you help
++SRU	stable release update
++TINASOTODP	this is not a statement of the official Debian position
++WIR	when it's ready
