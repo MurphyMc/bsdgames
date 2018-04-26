@@ -11,8 +11,8 @@ Build-Depends: bison,
 Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
 Uploaders: Dr. Tobias Quathamer <toddy@debian.org>
 Standards-Version: 4.1.1
-Vcs-Git: https://anonscm.debian.org/git/pkg-games/bsdgames.git
-Vcs-Browser: https://anonscm.debian.org/cgit/pkg-games/bsdgames.git
+Vcs-Browser: https://salsa.debian.org/games-team/bsdgames
+Vcs-Git: https://salsa.debian.org/games-team/bsdgames.git
 
 Package: bsdgames
 Architecture: any
