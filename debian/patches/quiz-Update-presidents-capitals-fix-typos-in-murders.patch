@@ -3,13 +3,13 @@ Date: Thu, 16 Feb 2012 11:26:50 +0100
 Subject: quiz: Update presidents, capitals, fix typos in murders, poetry
 
 ---
- quiz/datfiles/africa  |   51 ++++++++++++++++++++++++++++++------------------
- quiz/datfiles/america |   45 ++++++++++++++++++++++++++++++++++--------
- quiz/datfiles/asia    |   40 ++++++++++++++++++++++++--------------
- quiz/datfiles/europe  |   44 ++++++++++++++++++++++++++++-------------
- quiz/datfiles/murders |    2 +-
- quiz/datfiles/poetry  |    2 +-
- quiz/datfiles/pres    |    6 +++-
+ quiz/datfiles/africa  | 51 ++++++++++++++++++++++++++++++++-------------------
+ quiz/datfiles/america | 45 ++++++++++++++++++++++++++++++++++++---------
+ quiz/datfiles/asia    | 40 +++++++++++++++++++++++++---------------
+ quiz/datfiles/europe  | 44 ++++++++++++++++++++++++++++++--------------
+ quiz/datfiles/murders |  2 +-
+ quiz/datfiles/poetry  |  2 +-
+ quiz/datfiles/pres    |  6 ++++--
  7 files changed, 129 insertions(+), 61 deletions(-)
 
 diff --git a/quiz/datfiles/africa b/quiz/datfiles/africa
@@ -350,4 +350,3 @@ index 6f81228..4ce5862 100644
 +{R{ichard} }{B{ruce} }Cheney:{B{arack} }{H{ussein} }Obama{ II}
 +{B{arack} }{H{ussein} }Obama{ II}:2009-:\
 +{J{oe{seph}} }{R{obinette} }{Biden}{{,} J{unio}r}:
--- 

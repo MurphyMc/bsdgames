@@ -3,21 +3,21 @@ Date: Mon, 26 Mar 2012 10:51:46 +0200
 Subject: Fix format-security compiling errors
 
 ---
- battlestar/room.c   |    2 +-
- cribbage/io.c       |   10 +++++-----
- hack/hack.apply.c   |    2 +-
- hack/hack.eat.c     |    2 +-
- hack/hack.end.c     |    4 ++--
- hack/hack.invent.c  |    4 ++--
- hack/hack.main.c    |    2 +-
- hack/hack.options.c |    2 +-
- hack/hack.pager.c   |    4 ++--
- hack/hack.potion.c  |    2 +-
- hack/hack.rumors.c  |    2 +-
- hack/hack.timeout.c |    2 +-
- hunt/hunt/hunt.c    |    4 ++--
- monop/misc.c        |    2 +-
- sail/assorted.c     |    6 +++---
+ battlestar/room.c   |  2 +-
+ cribbage/io.c       | 10 +++++-----
+ hack/hack.apply.c   |  2 +-
+ hack/hack.eat.c     |  2 +-
+ hack/hack.end.c     |  4 ++--
+ hack/hack.invent.c  |  4 ++--
+ hack/hack.main.c    |  2 +-
+ hack/hack.options.c |  2 +-
+ hack/hack.pager.c   |  4 ++--
+ hack/hack.potion.c  |  2 +-
+ hack/hack.rumors.c  |  2 +-
+ hack/hack.timeout.c |  2 +-
+ hunt/hunt/hunt.c    |  4 ++--
+ monop/misc.c        |  2 +-
+ sail/assorted.c     |  6 +++---
  15 files changed, 25 insertions(+), 25 deletions(-)
 
 diff --git a/battlestar/room.c b/battlestar/room.c
@@ -295,4 +295,3 @@ index cfc7d2a..ecb8406 100644
  	}
  	/*
  	if (Chit > 1 && on->file->readyL&R_INITIAL && on->file->readyR&R_INITIAL) {
--- 

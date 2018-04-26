@@ -3,15 +3,15 @@ Date: Thu, 16 Feb 2012 11:26:00 +0100
 Subject: Replace getline() with get_line()
 
 ---
- boggle/boggle/bog.c    |    2 +-
- boggle/boggle/extern.h |    2 +-
- boggle/boggle/mach.c   |    2 +-
- cribbage/crib.c        |    4 ++--
- cribbage/cribbage.h    |    2 +-
- cribbage/io.c          |    8 ++++----
- gomoku/bdisp.c         |    2 +-
- gomoku/gomoku.h        |    2 +-
- gomoku/main.c          |   14 +++++++-------
+ boggle/boggle/bog.c    |  2 +-
+ boggle/boggle/extern.h |  2 +-
+ boggle/boggle/mach.c   |  2 +-
+ cribbage/crib.c        |  4 ++--
+ cribbage/cribbage.h    |  2 +-
+ cribbage/io.c          |  8 ++++----
+ gomoku/bdisp.c         |  2 +-
+ gomoku/gomoku.h        |  2 +-
+ gomoku/main.c          | 14 +++++++-------
  9 files changed, 19 insertions(+), 19 deletions(-)
 
 diff --git a/boggle/boggle/bog.c b/boggle/boggle/bog.c
@@ -217,4 +217,3 @@ index 299dee1..3ff4750 100644
  		quit();
  	switch (*fmtbuf) {
  	case '\0':
--- 

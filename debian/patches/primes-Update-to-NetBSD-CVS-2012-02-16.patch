@@ -3,8 +3,8 @@ Date: Thu, 16 Feb 2012 13:05:28 +0100
 Subject: primes: Update to NetBSD CVS, 2012-02-16
 
 ---
- primes/primes.6 |   10 ++++++-
- primes/primes.c |   67 +++++++++++++++++++++++++++++++++---------------------
+ primes/primes.6 | 10 +++++++--
+ primes/primes.c | 67 +++++++++++++++++++++++++++++++++++----------------------
  2 files changed, 49 insertions(+), 28 deletions(-)
 
 diff --git a/primes/primes.6 b/primes/primes.6
@@ -225,4 +225,3 @@ index 2d93594..4693968 100644
 +	(void)fprintf(stderr, "usage: primes [-d] [start [stop]]\n");
  	exit(1);
  }
--- 

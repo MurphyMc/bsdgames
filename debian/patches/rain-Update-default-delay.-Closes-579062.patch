@@ -3,8 +3,8 @@ Date: Thu, 16 Feb 2012 11:26:53 +0100
 Subject: rain: Update default delay. Closes: #579062
 
 ---
- rain/rain.6 |    2 +-
- rain/rain.c |    2 +-
+ rain/rain.6 | 2 +-
+ rain/rain.c | 2 +-
  2 files changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/rain/rain.6 b/rain/rain.6
@@ -32,4 +32,3 @@ index e388f46..63e6276 100644
  	unsigned long val = 0;
  	int ch;
  	char *ep;
--- 

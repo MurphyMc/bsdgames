@@ -3,8 +3,8 @@ Date: Mon, 26 Mar 2012 10:06:45 +0200
 Subject: Custom configuration of Debian package build
 
 ---
- config.params |   49 +++++++++++++++++++++++++++++++++++++++++++++++++
- 1 files changed, 49 insertions(+), 0 deletions(-)
+ config.params | 49 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 49 insertions(+)
  create mode 100644 config.params
 
 diff --git a/config.params b/config.params
@@ -62,4 +62,3 @@ index 0000000..97d45fb
 +# This is for dab, the corresponding variable other_cxxflags does not
 +# exist, so append it to the "warning" flags
 +bsd_games_cfg_cxx_warning_flags="-Wall -W -Wpointer-arith -Wcast-align -Wcast-qual -Wwrite-strings $(dpkg-buildflags --get CXXFLAGS) $(dpkg-buildflags --get CPPFLAGS)"
--- 

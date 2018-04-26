@@ -3,8 +3,8 @@ Date: Thu, 16 Feb 2012 13:17:13 +0100
 Subject: primes: Document maximum number in manpage. Closes: #636569
 
 ---
- primes/primes.6 |    9 ++++++---
- 1 files changed, 6 insertions(+), 3 deletions(-)
+ primes/primes.6 | 9 ++++++---
+ 1 file changed, 6 insertions(+), 3 deletions(-)
 
 diff --git a/primes/primes.6 b/primes/primes.6
 index 9499398..ac100c6 100644
@@ -35,4 +35,3 @@ index 9499398..ac100c6 100644
  The
  .Ar start
  value may be preceded by a single
--- 

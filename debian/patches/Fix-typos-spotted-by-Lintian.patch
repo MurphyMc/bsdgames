@@ -3,8 +3,8 @@ Date: Fri, 24 Feb 2012 14:29:11 +0100
 Subject: Fix typos spotted by Lintian
 
 ---
- atc/update.c |    2 +-
- hack/hack.c  |    2 +-
+ atc/update.c | 2 +-
+ hack/hack.c  | 2 +-
  2 files changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/atc/update.c b/atc/update.c
@@ -33,4 +33,3 @@ index 05141af..6e5028e 100644
  				break;
  			}
  			if (wt > -5)
--- 

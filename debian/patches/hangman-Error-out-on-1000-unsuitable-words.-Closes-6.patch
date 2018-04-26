@@ -3,8 +3,8 @@ Date: Thu, 16 Feb 2012 22:37:50 +0100
 Subject: hangman: Error out on 1000 unsuitable words. Closes: #610270
 
 ---
- hangman/getword.c |   18 +++++++++++++++++-
- 1 files changed, 17 insertions(+), 1 deletions(-)
+ hangman/getword.c | 18 +++++++++++++++++-
+ 1 file changed, 17 insertions(+), 1 deletion(-)
 
 diff --git a/hangman/getword.c b/hangman/getword.c
 index 1b5396a..dc42a53 100644
@@ -44,4 +44,3 @@ index 1b5396a..dc42a53 100644
  	}
  	gp = Known;
  	wp = Word;
--- 
