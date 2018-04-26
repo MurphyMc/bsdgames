@@ -6,11 +6,10 @@
 0007-Custom-configuration-of-Debian-package-build.patch
 0008-Unsorted-Debian-patches.patch
 0009-quiz-Add-answers-to-adults-babies.-Closes-659528.patch
-0010-primes-Update-to-NetBSD-CVS-2012-02-16.patch
-0011-primes-Document-maximum-number-in-manpage.-Closes-63.patch
 0013-hangman-Error-out-on-1000-unsuitable-words.-Closes-6.patch
 0014-Fix-typos-spotted-by-Lintian.patch
 0015-Fix-format-security-compiling-errors.patch
 0016-Fix-include-stdio.h-C-incompatibility.patch
 0015-Update-acronyms.patch
 0016-Add-Debian-acronyms.patch
+0015-primes-Update-to-NetBSD-CVS-2018-02-03.patch
