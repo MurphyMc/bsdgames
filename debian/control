@@ -1,8 +1,13 @@
 Source: bsdgames
 Section: games
 Priority: optional
-Build-Depends: debhelper (>= 11~), libncurses5-dev, flex, bison,
- wamerican, wbritish, libfl-dev
+Build-Depends: bison,
+               debhelper (>= 11~),
+               flex,
+               libfl-dev,
+               libncurses5-dev,
+               wamerican,
+               wbritish
 Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
 Uploaders: Dr. Tobias Quathamer <toddy@debian.org>
 Standards-Version: 4.1.1
@@ -11,7 +16,7 @@ Vcs-Browser: https://anonscm.debian.org/cgit/pkg-games/bsdgames.git
 
 Package: bsdgames
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, wamerican | wordlist
+Depends: wamerican | wordlist, ${misc:Depends}, ${shlibs:Depends}
 Provides: adventure
 Description: collection of classic textual unix games
  This is a collection of some of the text-based games and amusements that
