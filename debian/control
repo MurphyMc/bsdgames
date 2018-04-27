@@ -4,6 +4,7 @@ Priority: optional
 Build-Depends: bison,
                debhelper (>= 11~),
                flex,
+               groff,
                libfl-dev,
                libncurses5-dev,
                wamerican,

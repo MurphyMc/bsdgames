@@ -11,6 +11,8 @@ override_dh_auto_build:
 	cat /usr/share/dict/american-english /usr/share/dict/british-english | \
 		sort | uniq > temp-dictionary
 	dh_auto_build
+	# Generate a pdf file for trek documentation, see #874680
+	cat trek/USD.doc/trek.me | tbl | groff -me -Tpdf > debian/trek.pdf
 
 override_dh_installdocs:
 	dh_installdocs
@@ -33,6 +35,9 @@ override_dh_install:
 	# update-alternatives system. See bug #802422.
 	mv debian/bsdgames/usr/games/adventure debian/bsdgames/usr/games/bsdgames-adventure
 	mv debian/bsdgames/usr/share/man/man6/adventure.6 debian/bsdgames/usr/share/man/man6/bsdgames-adventure.6
+
+override_dh_compress:
+	dh_compress --exclude=.pdf
 
 override_dh_fixperms:
 	dh_fixperms
