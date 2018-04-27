@@ -1,3 +1,20 @@
+bsdgames (2.17-27) unstable; urgency=medium
+
+  * Use debhelper v11
+  * Run wrap-and-sort
+  * Switch d/watch to version 4
+  * Switch Vcs-URLs to salsa.d.o
+  * Update Standards-Version to 4.1.4, no changes needed
+  * Convert patch system from quilt to git-buildpackage
+  * Rename and renumber patches, no content changes
+  * Update acronyms from NetBSD. (Closes: #798185)
+  * Update primes to NetBSD CVS from 2018-02-03. (Closes: #762653)
+  * Better explanation how to read the documentation.
+    Thanks to Ben Wong <galadriel@wongs.net> (Closes: #874680)
+  * Create and install pdf file for trek documentation
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Fri, 27 Apr 2018 11:39:09 +0200
+
 bsdgames (2.17-26) unstable; urgency=medium
 
   * Fix FTBFS with libncurses6.
