@@ -1,3 +1,14 @@
+bsdgames (2.17-28) unstable; urgency=medium
+
+  * hack: Fix segv when 'i' (inventory) done after load from saved game.
+    Not all name information was saved or recovered leaving pointers to
+    nothing.
+    Thanks to Richard Henschel <rhenschel@accesscomm.ca>
+  * Make choice of c compiler more flexible to help cross building.
+    Thanks to Helmut Grohne <helmut@subdivi.de> (Closes: #897048)
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Sat, 28 Apr 2018 15:14:43 +0200
+
 bsdgames (2.17-27) unstable; urgency=medium
 
   * Use debhelper v11
