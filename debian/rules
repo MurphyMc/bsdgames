@@ -3,6 +3,12 @@
 # Use all hardening features
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
+# Make choice of c compiler more flexible to help cross building.
+# See bug #897048
+-include /usr/share/dpkg/buildtools.mk
+export bsd_games_cfg_cc=$(CC)
+export bsd_games_cfg_cxx=$(CXX)
+
 %:
 	dh $@
 
