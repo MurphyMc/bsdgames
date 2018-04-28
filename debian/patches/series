@@ -14,3 +14,4 @@
 0014-Add-Debian-acronyms.patch
 0015-primes-Update-to-NetBSD-CVS-2018-02-03.patch
 0016-Better-explanation-how-to-read-the-documentation.patch
+0017-hack-Fix-segv-when-i-inventory-done-after-load-from-.patch
