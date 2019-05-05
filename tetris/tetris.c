@@ -76,9 +76,49 @@ int	showpreview;
 
 static	void	elide(void);
 static	void	setup_board(void);
+static	void	shuffle(int *, size_t);
+static const struct shape *	randshape(void);
 	int	main(int, char **);
 	void	onintr(int) __attribute__((__noreturn__));
 	void	usage(void) __attribute__((__noreturn__));
+
+
+/*
+ * Based on Ben Pfaff's shuffle()
+ */
+static void
+shuffle (array, n)
+	int *array;
+	size_t n;
+{
+	size_t i;
+	size_t j;
+	int t;
+
+	if (n <= 1) return;
+
+	for (i = 0; i < n - 1; i++) {
+		j = i + rand() / (RAND_MAX / (n - i) + 1);
+		t = array[j];
+		array[j] = array[i];
+		array[i] = t;
+	}
+}
+
+static int shapebag[7] = {0,1,2,3,4,5,6};
+static int bagshape = 0;
+
+/*
+ * Select the next shape from a shuffled bag of shapes
+ */
+static const struct shape *
+randshape()
+{
+	if (bagshape == 0) shuffle(shapebag, 7);
+	const struct shape * r = &shapes[shapebag[bagshape]];
+	bagshape = (bagshape + 1) % 7;
+	return r;
+}
 
 /*
  * Set up the initial board.  The bottom display row is completely set,

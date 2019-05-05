@@ -128,7 +128,6 @@ struct shape {
 };
 
 extern const struct shape shapes[];
-#define	randshape() (&shapes[random() % 7])
 
 extern const struct shape *curshape;
 extern const struct shape *nextshape;
